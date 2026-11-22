@@ -1,0 +1,180 @@
+{
+  "admissible_fixture_replays": 6,
+  "arbitrary_context_identity_checks": 2048,
+  "fixtures": [
+    {
+      "P_Q": [
+        "3c5c4086",
+        "fd82d5b3"
+      ],
+      "V_recovered_from_W27_W29": "f3cf8db0",
+      "arm": "p4",
+      "entry": "standard_IV",
+      "key": [
+        "571796d5",
+        "f587fec1",
+        "eb0f37e0",
+        "fa85af9d",
+        "1ec81412",
+        "40a809c0",
+        "0146901c",
+        "40812321",
+        "a24c0040"
+      ],
+      "origin": "84e06fbc",
+      "output_offsets": [
+        "2130c945",
+        "2daba14e"
+      ],
+      "status": "PASS"
+    },
+    {
+      "P_Q": [
+        "a4787413",
+        "5f634562"
+      ],
+      "V_recovered_from_W27_W29": "3e766802",
+      "arm": "p4",
+      "entry": "public_C39",
+      "key": [
+        "d26ad63a",
+        "f469cad0",
+        "6a77079c",
+        "49499c35",
+        "92b12fdf",
+        "a0914801",
+        "150e3008",
+        "50100904",
+        "04c452a8"
+      ],
+      "origin": "89a70c3b",
+      "output_offsets": [
+        "6c045000",
+        "bbd91dbb"
+      ],
+      "status": "PASS"
+    },
+    {
+      "P_Q": [
+        "62b8e2d7",
+        "83e61527"
+      ],
+      "V_recovered_from_W27_W29": "1e01368a",
+      "arm": "p4",
+      "entry": "public_C40",
+      "key": [
+        "63655096",
+        "aaf45520",
+        "eb85a982",
+        "cbc3dd3f",
+        "19949666",
+        "10040001",
+        "a4dba982",
+        "d0190166",
+        "02e01489"
+      ],
+      "origin": "56fccd75",
+      "output_offsets": [
+        "66626990",
+        "ee156aed"
+      ],
+      "status": "PASS"
+    },
+    {
+      "P_Q": [
+        "b73d3185",
+        "dd637a9d"
+      ],
+      "V_recovered_from_W27_W29": "30eeac56",
+      "arm": "p1",
+      "entry": "standard_IV",
+      "key": [
+        "85098c04",
+        "b8422b5d",
+        "01e8baca",
+        "281494c8",
+        "9ae25d95",
+        "60000011",
+        "01c90b42",
+        "042c2832",
+        "804291c1"
+      ],
+      "origin": "7fd80cab",
+      "output_offsets": [
+        "61100022",
+        "c09701ba"
+      ],
+      "status": "PASS"
+    },
+    {
+      "P_Q": [
+        "d8044d1c",
+        "fa8f226c"
+      ],
+      "V_recovered_from_W27_W29": "2d996766",
+      "arm": "p1",
+      "entry": "public_C39",
+      "key": [
+        "e22f2826",
+        "7820b1aa",
+        "96853b7f",
+        "9404bbd2",
+        "6b792074",
+        "4c405281",
+        "00850132",
+        "880ca043",
+        "04001900"
+      ],
+      "origin": "3b71d332",
+      "output_offsets": [
+        "00821683",
+        "79e63b43"
+      ],
+      "status": "PASS"
+    },
+    {
+      "P_Q": [
+        "fcd03848",
+        "0383c161"
+      ],
+      "V_recovered_from_W27_W29": "5c012f1e",
+      "arm": "p1",
+      "entry": "public_C40",
+      "key": [
+        "4487bdfd",
+        "ddcd3e81",
+        "9e2c173a",
+        "87c70385",
+        "da9216cf",
+        "2a0205a8",
+        "940d9006",
+        "21682490",
+        "82828a46"
+      ],
+      "origin": "dd16c710",
+      "output_offsets": [
+        "05450810",
+        "297a094c"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "key_semantics": "Sufficient representation of the normalized unrestricted immediate map; not a minimal classification.",
+  "row29_inverse_coordinate_checks": 6,
+  "scope": {
+    "arbitrary_contexts": "Algebra identity only; schedule admissibility is not asserted.",
+    "excluded_claims": [
+      "endpoint witness",
+      "endpoint probability",
+      "independent lanes",
+      "cross-context admissible-fibre reuse",
+      "speedup",
+      "Yukon cost"
+    ],
+    "fixtures": "Genuine retained schedules, complete expansion through W38 and state replay through S16.",
+    "origin_shifts": "Synthetic coordinate changes only; no reachable-context or domain equivalence is asserted."
+  },
+  "small_sigma0_inverse_two_sided_basis_checks": 64,
+  "status": "PASS",
+  "synthetic_input_origin_covariance_checks": 256
+}

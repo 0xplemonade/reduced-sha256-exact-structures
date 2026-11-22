@@ -1,0 +1,10 @@
+{
+  "INPUTS.json": {
+    "sha256": "bacb01815ae5e694b89662ed21cf6bbd1a0ab6507b18eb02781a761f10279a37",
+    "source": "/workspace/scratch/17f12baf7df8/s16-projection-check-v1/INPUTS.json"
+  },
+  "reference.py": {
+    "sha256": "17284e7c90e5d82eefbdb8e551b9477edc4760724ef920a1155a12953f94e36a",
+    "source": "/workspace/scratch/17f12baf7df8/s16-projection-check-v1/reference.py"
+  }
+}
