@@ -1,0 +1,14 @@
+{
+  "arm": "shifted-public-r38",
+  "dW9": "00028000",
+  "dW22": "07ff0000",
+  "dW8": "00000000",
+  "terminal_D_s1_target": "00000004",
+  "row24_derivative_image_size": 1770752,
+  "w39_eligible_dW37_image_size": 2064189,
+  "W22_passing_row24_exists": 344457216,
+  "W22_passing_W39_derivative_exists": 64,
+  "W22_passing_both": 0,
+  "first_W22_passing_both": null,
+  "inverse_sample_failures": 0
+}

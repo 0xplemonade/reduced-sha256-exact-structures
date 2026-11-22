@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "scope": "SHA-256 message schedule W0..W39 only; no compression state, common-CV, or reachability search",
+  "difference_convention": "right minus left modulo 2^32; D_f(x,d)=f(x+d)-f(x)",
+  "primary": {
+    "arm": "shifted-public-r38 compensated r39 family",
+    "common_W39_feasible": false,
+    "support_through_W38": [6, 7, 9, 14, 22, 23, 37],
+    "fixed_differences": {
+      "6": "31de0240",
+      "7": "fffffffc",
+      "9": "00028000",
+      "14": "00000004",
+      "22": "07ff0000",
+      "23": "fffffffc"
+    },
+    "dependencies": {
+      "row24": "D_s1(W22,07ff0000)+D_s0(W9,00028000)=0",
+      "row37": "dW37=D_s0(W22,07ff0000)",
+      "row38": "D_s0(W23,fffffffc)+07ff0000=0",
+      "row39": "dW39=D_s1(W37,dW37)+fffffffc; common W39 iff D_s1(W37,dW37)=00000004"
+    },
+    "supplied_witness": {
+      "left_W0_W39": [
+        "01234567", "02468ace", "0369d035", "048d159c", "05b05b03", "06d3a06a", "06440e60", "16185001",
+        "9302d7a2", "d17ee0f6", "0c83fb6d", "0da740d4", "0eca863b", "0fedcba2", "00002011", "3a0fbb8f",
+        "25aca342", "57ea295f", "54d1080f", "75670213", "f77eee4e", "2b86569b", "0016c400", "00080004",
+        "f51d9c39", "4ba4a6c5", "792c26bc", "a3191b2a", "08f3b6a8", "e8e1978d", "a5618024", "d0690d16",
+        "9f962d06", "ce644eba", "b3b1900a", "65a6fe72", "810a7644", "22d8e3a4", "4e4a7351", "17944611"
+      ],
+      "right_W0_W39": [
+        "01234567", "02468ace", "0369d035", "048d159c", "05b05b03", "06d3a06a", "382210a0", "16184ffd",
+        "9302d7a2", "d18160f6", "0c83fb6d", "0da740d4", "0eca863b", "0fedcba2", "00002015", "3a0fbb8f",
+        "25aca342", "57ea295f", "54d1080f", "75670213", "f77eee4e", "2b86569b", "0815c400", "00080000",
+        "f51d9c39", "4ba4a6c5", "792c26bc", "a3191b2a", "08f3b6a8", "e8e1978d", "a5618024", "d0690d16",
+        "9f962d06", "ce644eba", "b3b1900a", "65a6fe72", "810a7644", "e1e87fa4", "4e4a7351", "da04b9d4"
+      ],
+      "W22_left": "0016c400",
+      "W9_left": "d17ee0f6",
+      "row24_D_s1": "a001fac1",
+      "row24_D_s0": "5ffe053f",
+      "dW37": "bf0f9c00",
+      "W37_left": "22d8e3a4",
+      "D_s1_W37": "c27073c7",
+      "common_W38": "4e4a7351",
+      "dW39": "c27073c3"
+    },
+    "fixed_active_core_family": {
+      "fixed_left_words": [6, 7, 9, 14, 22, 23],
+      "free_common_coordinates": [17, 18, 19, 20, 21, 24, 25, 26, 27, 28],
+      "cardinality_at_fixed_active_core": "2^320 schedule pairs",
+      "reconstruction": {
+        "W8": "W24-s1(W22)-W17-s0(W9)",
+        "W10": "s0_inverse(W25-s1(W23)-W18-W9)",
+        "W11": "s0_inverse(W26-s1(W24)-W19-W10)",
+        "W12": "s0_inverse(W27-s1(W25)-W20-W11)",
+        "W13": "s0_inverse(W28-s1(W26)-W21-W12)",
+        "W15": "W22-s1(W20)-s0(W7)-W6",
+        "W16": "W23-s1(W21)-s0(W8)-W7",
+        "W0_to_W5": "reverse recurrence from the W6..W21 window"
+      },
+      "W37": "F(the ten free common coordinates)=s1(W35)+W30+s0(W22)+W21",
+      "W37_is_independent_coordinate": false,
+      "surjectivity_of_F": "not needed and not claimed; the impossibility count relaxes W37 to every 32-bit value",
+      "two_reachable_W37_left_values_same_active_core": ["22d8e3a4", "b51fb3d0"],
+      "second_pair_left_W0_W15": [
+        "01234568", "02468ace", "0369d035", "048d159c", "05b05b03", "06d3a06a", "06440e60", "16185001",
+        "a7d1392d", "d17ee0f6", "0c83fb6d", "0da740d4", "0eca863b", "0fedcba2", "00002011", "3a11bf0f"
+      ],
+      "second_pair_right_W0_W15": [
+        "01234568", "02468ace", "0369d035", "048d159c", "05b05b03", "06d3a06a", "382210a0", "16184ffd",
+        "a7d1392d", "d18160f6", "0c83fb6d", "0da740d4", "0eca863b", "0fedcba2", "00002015", "3a11bf0f"
+      ],
+      "second_pair_W37_left": "b51fb3d0",
+      "second_pair_dW37": "bf0f9c00",
+      "second_pair_common_W38": "6a845897",
+      "second_pair_dW39": "1e50337d"
+    },
+    "exact_exhaustive_count": {
+      "row24_derivative_image_size": 1770752,
+      "w39_eligible_dW37_image_size": 2064189,
+      "W22_passing_row24_exists": 344457216,
+      "W22_passing_W39_derivative_exists": 64,
+      "W22_passing_both": 0,
+      "first_W22_passing_both": null
+    },
+    "conclusion": "No exact member can have common W39. The zero count already grants W37 every 32-bit value, so any actual forward-schedule restriction on W37 can only remove candidates."
+  },
+  "analogous_public_r37": {
+    "condition": "D_s1(W37,dW37)=00000001",
+    "row24": "D_s1(W22,fdffc000)+D_s0(W9,0000a000)+d0007c70=0",
+    "dW37": "D_s0(W22,fdffc000)",
+    "common_W39_feasible": false,
+    "exact_exhaustive_count": {
+      "row24_derivative_image_size": 1308032,
+      "w39_eligible_dW37_image_size": 7086481,
+      "W22_passing_row24_exists": 540494592,
+      "W22_passing_W39_derivative_exists": 4432,
+      "W22_passing_both": 0,
+      "first_W22_passing_both": null
+    }
+  },
+  "input_sha256": {
+    "r38_to_r39_shift_audit/WITNESS.json": "2693badbf851bd58efa3c2ff9b8700fee01ddb165fc429bbe2386696c52cf297",
+    "r38_to_r39_shift_audit/verify.py": "856af4c74afb7512342f6064075be9bf39bac2c66c5f72531f25d041fead57c7",
+    "attachment_md": "f15190bfb02f5630d3712cc3a107a6ff79fdeb4d4042a2bfd579fd67c4ff4aff",
+    "opus55_r38_report": "a8da6cea8d65056d950cf82b6edfbfbe0a6b4769992531e721c908c2f38fcc57",
+    "opus55_r37_report": "88e7054ee63336de7256d567a1c0a3125652cf7bb5838e94af6c91300eb49378"
+  }
+}
