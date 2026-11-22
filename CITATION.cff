@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: Cite this repository when you use its proofs, code, or datasets.
+title: Reduced SHA-256 exact structures
+type: software
+authors:
+  - family-names: 0xplemonade
+repository-code: https://github.com/0xplemonade/reduced-sha256-exact-structures
+version: 0.1.0
+date-released: 2026-11-22
+license: Apache-2.0 AND CC-BY-4.0
