@@ -49,11 +49,13 @@ project.
 
 Version 0.1 contains five result groups.
 
-### Schedule coordinates and state-preserving fibres
+### Constructive schedule coordinates and state-preserving fibres
 
 Package the exact coordinate map between the retained sparse schedule family
 and its message pairs. Include the S13-preserving chart, the conditional S14
-fibre, and the domain-equivalence proof.
+fibre, and the domain-equivalence proof. Expose the construction as a small
+command that regenerates a saved valid pair from its entry, prefix, fibre
+coordinates, and three chosen left outputs.
 
 Source packets:
 
@@ -63,7 +65,8 @@ Source packets:
 
 The public text must distinguish a coordinate change from added freedom. It
 must also state that a large fibre does not establish endpoint success or an
-attack cost.
+attack cost. The construction output must be called a paired message schedule
+or a boundary-preserving construction, never a collision.
 
 ### Conditional message modification
 
@@ -145,7 +148,7 @@ The initial repository uses this structure:
 ```text
 README.md
 results/
-  schedule-fibres/
+  schedule-constructions/
   conditional-modification/
   common-w39-obstruction/
   derivative-fibres/
@@ -171,6 +174,11 @@ Each directory under `results/` contains:
 - `SOURCE_BINDINGS.json` when the result depends on an external fixture or
   copied source.
 
+`results/schedule-constructions/` also contains `generate.py`. Running
+`python3 generate.py --example 0` reconstructs the first saved pair from its
+coordinates and prints both 16-word message blocks, their sparse support, and
+their pair digest as JSON.
+
 Do not copy a source packet as a directory without review. Select the minimal
 files, remove workspace-specific wrappers, and preserve the mathematical
 meaning and source hashes.
@@ -182,11 +190,12 @@ The root README is the primary publication. It follows this order:
 1. A two-paragraph summary of the repository.
 2. A prominent statement of what the repository does not claim.
 3. A result table with evidence class, scope, and reproduction link.
-4. Plain-language explanations of the five result groups.
-5. A quick verification command and expected output.
-6. Reuse guidance for code, data, and citations.
-7. Provenance and relationship to `sha256-structural-data`.
-8. Open questions that follow from the exact results.
+4. A "Generate a valid paired schedule" example using the constructive chart.
+5. Plain-language explanations of the five result groups.
+6. A quick verification command and expected output.
+7. Reuse guidance for code, data, and citations.
+8. Provenance and relationship to `sha256-structural-data`.
+9. Open questions that follow from the exact results.
 
 Use equations only when the equation is the result or defines its scope. Define
 each local symbol near its first use. Avoid packet names in the explanatory
@@ -272,6 +281,8 @@ Version 0.1 is ready when all of these statements are true:
 - A fresh clone passes `python3 verify.py`.
 - Every README claim links to an evidence file and states its scope.
 - Every saved witness replays with an independent implementation.
+- The documented construction command regenerates its saved message pair and
+  pair digest from coordinates rather than reading the final pair as output.
 - Every exhaustive count has either a replayable full scan or a compact proof
   certificate and a documented full-scan command.
 - The quick verifier runs no long search and no SAT or SMT query.
