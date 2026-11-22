@@ -1,0 +1,40 @@
+{
+  "schema": "reduced-sha256-claims-v1",
+  "claims": [
+    {
+      "id": "schedule-constructions",
+      "title": "Constructive schedule coordinates and state-preserving fibres",
+      "evidence_class": "proved",
+      "directory": "results/schedule-constructions",
+      "command": ["python3", "verify.py"]
+    },
+    {
+      "id": "conditional-modification",
+      "title": "Conditional message modification through P(V) and Q(V)",
+      "evidence_class": "proved",
+      "directory": "results/conditional-modification",
+      "command": ["python3", "verify.py"]
+    },
+    {
+      "id": "common-w39-obstruction",
+      "title": "Common-W39 extension obstruction",
+      "evidence_class": "exhaustively-counted",
+      "directory": "results/common-w39-obstruction",
+      "command": ["python3", "verify.py"]
+    },
+    {
+      "id": "derivative-fibres",
+      "title": "Table 23 W24 derivative fibres",
+      "evidence_class": "exhaustively-counted",
+      "directory": "results/derivative-fibres",
+      "command": ["python3", "verify.py"]
+    },
+    {
+      "id": "carry-characteristics",
+      "title": "Carry-transfer and carry-reset characteristics",
+      "evidence_class": "constructive-witnesses",
+      "directory": "results/carry-characteristics",
+      "command": ["python3", "verify.py"]
+    }
+  ]
+}
