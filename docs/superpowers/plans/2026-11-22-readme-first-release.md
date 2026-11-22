@@ -77,6 +77,7 @@ results/
     WITNESSES.json
     verify.py
 tests/
+  __init__.py
   support.py
   test_carry_characteristics.py
   test_claim_catalog.py
@@ -105,6 +106,7 @@ prints one JSON summary.
 - Create: `LICENSE-DOCS`
 - Create: `CITATION.cff`
 - Create: `THIRD_PARTY.md`
+- Create: `tests/__init__.py`
 - Create: `tests/support.py`
 - Create: `tests/test_repository_metadata.py`
 
@@ -219,6 +221,9 @@ def run_result(name, *args):
     )
     return json.loads(process.stdout)
 ```
+
+Create an empty `tests/__init__.py` so module-based `unittest` commands always
+resolve this repository's test package.
 
 - [ ] **Step 4: Run the metadata test**
 
