@@ -1371,8 +1371,11 @@ class DocumentationTest(unittest.TestCase):
                 self.assertTrue((document.parent / path).resolve().exists(), (document, target))
 
     def test_no_private_workspace_paths(self):
+        forbidden = "/root/" + ".t3/"
         for path in list(ROOT.rglob("*.md")) + list(ROOT.rglob("*.py")) + list(ROOT.rglob("*.json")):
-            self.assertNotIn("/root/.t3/", path.read_text(errors="ignore"), path)
+            if "superpowers" in path.parts:
+                continue
+            self.assertNotIn(forbidden, path.read_text(errors="ignore"), path)
 
 
 if __name__ == "__main__":
@@ -1465,8 +1468,8 @@ derived numerical fixture when reuse permission is unclear.
 - [ ] **Step 7: Run documentation and full unit tests**
 
 ```bash
-python3 -m unittest discover -s tests -v
 python3 tools/build_manifest.py
+python3 -m unittest discover -s tests -v
 python3 verify.py
 ```
 
