@@ -1,0 +1,146 @@
+{
+  "difference_convention": "right minus left modulo 2^32",
+  "retained_left": [
+    "01234567",
+    "02468ace",
+    "0369d035",
+    "048d159c",
+    "05b05b03",
+    "06d3a06a",
+    "06440e60",
+    "16185001",
+    "9302d7a2",
+    "d17ee0f6",
+    "0c83fb6d",
+    "0da740d4",
+    "0eca863b",
+    "0fedcba2",
+    "00002011",
+    "3a0fbb8f"
+  ],
+  "retained_right": [
+    "01234567",
+    "02468ace",
+    "0369d035",
+    "048d159c",
+    "05b05b03",
+    "06d3a06a",
+    "382210a0",
+    "16184ffd",
+    "9302d7a2",
+    "d18160f6",
+    "0c83fb6d",
+    "0da740d4",
+    "0eca863b",
+    "0fedcba2",
+    "00002015",
+    "3a0fbb8f"
+  ],
+  "public_r38_left": "33ee28ac5f8ef994c787777c079d17e11198d1beb527c8554bfeff014ab531951cf31bd2bbfc637e122da4f948e6e447d5a6b8b6ea9e7af5aac1aeabeeaceb0dbd07668b833fe88e689ffe8da52259da14b9855eee5138ba88355f4806d5cf5d161c50014c6b7d7e0e7eb888747559fc990a7af69dd8e59f57d7f6a3c0fbd03b",
+  "public_r38_common_first_block": "33ee28ac5f8ef994c787777c079d17e11198d1beb527c8554bfeff014ab531951cf31bd2bbfc637e122da4f948e6e447d5a6b8b6ea9e7af5aac1aeabeeaceb0d",
+  "expected_C39": [
+    "03902558",
+    "21695787",
+    "956e31f0",
+    "b2a2a8db",
+    "9e1e4c84",
+    "07796aae",
+    "44897de5",
+    "dd951b06"
+  ],
+  "W7_fibre": [
+    "16185001",
+    "161a5001",
+    "161c5001",
+    "161e5001"
+  ],
+  "components": {
+    "W14_plus4_joint": {
+      "particular_z": "4a000000",
+      "basis_z": [
+        "02000001",
+        "00000002",
+        "00000008",
+        "08000010",
+        "00000020",
+        "00000040",
+        "00000080",
+        "00000100",
+        "00000200",
+        "00000400",
+        "00000800",
+        "00001000",
+        "40002000",
+        "00004000",
+        "00008000",
+        "00010000",
+        "00020000",
+        "00040000",
+        "00880000",
+        "00100000",
+        "00200000",
+        "00400000",
+        "01000000",
+        "04000000",
+        "10000000",
+        "20000000",
+        "80000000"
+      ],
+      "convert_z_to_left_word": "z"
+    },
+    "W23_minus4_joint": {
+      "particular_z": "00800000",
+      "basis_z": [
+        "02000001",
+        "00000002",
+        "00000008",
+        "08000010",
+        "00000020",
+        "00000040",
+        "00000080",
+        "00000100",
+        "00000200",
+        "00000400",
+        "00000800",
+        "00001000",
+        "40002000",
+        "00004000",
+        "00008000",
+        "00010000",
+        "00020000",
+        "00040000",
+        "00880000",
+        "00100000",
+        "00200000",
+        "00400000",
+        "01000000",
+        "04000000",
+        "10000000",
+        "20000000",
+        "80000000"
+      ],
+      "convert_z_to_left_word": "z+4 modulo 2^32"
+    }
+  },
+  "source_bindings": {
+    "scalar_reference": {
+      "path": "/workspace/scratch/17f12baf7df8/shifted-r38-r39-interface-review-v1/sha256_scalar.py",
+      "sha256": "17284e7c90e5d82eefbdb8e551b9477edc4760724ef920a1155a12953f94e36a"
+    },
+    "schedule_witness": {
+      "path": "/workspace/scratch/17f12baf7df8/shifted-r38-r39-interface-review-v1/WITNESS.json",
+      "sha256": "b59d1e6a0a9029e22aabcaf4ae1414f3602d9ddd01147ccd96956d2e246e8090"
+    },
+    "carry_certificates": {
+      "path": "/workspace/scratch/17f12baf7df8/shifted-r38-r39-interface-review-v1/carry_audit/RESULTS.json",
+      "sha256": "919c565567a417233ee9235ec9497f6f8373e4f287a57108f06f5fe30c1b604e"
+    },
+    "public_messages": {
+      "path": "/workspace/scratch/17f12baf7df8/omer-r37-r38-comparison-v1/INPUTS.json",
+      "sha256": "6c0772d52dd9e70c4b20d66886733478c5ce0c6be9d8d5c6fb9e73fa96b8b29a"
+    }
+  },
+  "public_r37_left": "a842962f000501590f876ccb6a09e664c48c5ffd1f0ed9967991532fd413ccc82e9646618918bffae39b39933e1db32c98a02cc5f322a65e4da51ff70000003cd2bc00c7abfef304cd3329a6cd84f33c10a83fc342af055cf66ae2e094c44971b5b25831c54c3d468274d8bd3594d68911920d2959ae954edc7b3d064e484318",
+  "r37_joint_W23_example": "085a5a5b",
+  "r37_joint_W23_provenance": "User-supplied public-r37 compensated-extension report, independent second pair; checked directly by the exact derivative predicates here."
+}

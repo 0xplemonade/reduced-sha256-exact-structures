@@ -1,0 +1,40 @@
+{
+  "schema": "reduced-sha256-construction-example-v1",
+  "examples": [
+    {
+      "arm": "p4",
+      "entry_words": [
+        "6a09e667",
+        "bb67ae85",
+        "3c6ef372",
+        "a54ff53a",
+        "510e527f",
+        "9b05688c",
+        "1f83d9ab",
+        "5be0cd19"
+      ],
+      "prefix_W0_W9": [
+        "1112d7db",
+        "0406f4a9",
+        "07a0cec2",
+        "545c4e7c",
+        "d035005a",
+        "9a29694a",
+        "06440e60",
+        "16185001",
+        "9302d7a2",
+        "d17ee0f6"
+      ],
+      "W22": "0016c400",
+      "V_W14": "f3cf8db0",
+      "Z_W23": "dac76e5d",
+      "left_A10_A12": [
+        "00000000",
+        "00000000",
+        "00000000"
+      ],
+      "expected_support": [6, 7, 9, 14, 22, 23, 37],
+      "expected_pair_sha256_be": "b16fec39f5e4ae2041b91cd8f2a358417163b0ed098f1d2c30212ffba642d80f"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "parent_archive_sha256": "f807445cab35718b6e7afc8ad7c57da6fba3f3a7904c59b5c755fa045b8428c9",
+  "reachable_s6_archive_sha256": "54d6d151e9eeca958ce3d3ed6e2969b5998670bee95dddec9361064491a92e05",
+  "files": {
+    "chart.py": {
+      "source": "/workspace/scratch/17f12baf7df8/late-core-s10-fibres-v1/chart.py",
+      "sha256": "9690b2ab2d5d1c60ed9f83eaad3e2397168fe9b93c584db880aa3d3bf79c540c",
+      "unchanged_copy": true
+    },
+    "reference.py": {
+      "source": "/workspace/scratch/17f12baf7df8/late-core-s10-fibres-v1/reference.py",
+      "sha256": "17284e7c90e5d82eefbdb8e551b9477edc4760724ef920a1155a12953f94e36a",
+      "unchanged_copy": true
+    },
+    "INPUTS.json": {
+      "source": "/workspace/scratch/17f12baf7df8/late-core-s10-fibres-v1/INPUTS.json",
+      "sha256": "8683145011148b0d91431e71eebb4aecc60939830d3c28bb6b00e522c60b8540",
+      "unchanged_copy": true
+    },
+    "fibre_algebra.py": {
+      "source": "/workspace/scratch/17f12baf7df8/late-core-s10-fibres-v1/check.py",
+      "sha256": "56144e0b73d7ac0c55ed411d176719757aa3bfdae24791ec58b04b62d284d7ac",
+      "unchanged_copy": true
+    }
+  }
+}
